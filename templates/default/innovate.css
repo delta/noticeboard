@@ -4,3 +4,75 @@
  * a rich text editor
  * button css
  */
+
+.frameBody
+{
+    font-family:Verdana, Arial, sans-serif;
+    font-size:70%;
+    margin:0;
+    background: #ecedea;
+    padding:1em;
+    height:100%;
+}
+
+.frameBody p
+{
+    padding:0;
+}
+
+iframe {
+	width: 600px;
+}
+
+.rte-zone
+{
+margin:0;
+padding:0;
+height:160px;
+border:1px #999 solid;
+    clear:both;
+}
+
+.rte-edm {
+display:block;
+}
+
+.rte-toolbar { 
+overflow:hidden; 
+box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+background: #fedcba;
+line-height: 15px;
+}
+
+.rte-toolbar a, .rte-toolbar a img {
+border:0;
+position: relative;
+top: 2px;
+}
+
+.rte-toolbar p {
+    float:left;
+    margin:0;
+    padding-right:5px;
+}
+
+.text-body {
+	width: 600px;
+	margin: auto;
+	background: white;
+	border: solid 1px #ecedea;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+
+}
+
+div.text-head {
+	margin: 15px;
+}
+div.text-head input {
+	font-size: 25px;
+	width: 600px;
+	border-radius: 5px;
+	outline: none;
+	border: 0;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
