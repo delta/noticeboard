@@ -1,8 +1,7 @@
 <?php
-
+if(isset($_GET["_a"])):
 ?>
-<link href="./templates/<?php echo TEMPLATE;?>/innovate.css" type="text/css" rel="stylesheet" />
-<div class="container">
+<div class="innovate">
 	<div class="textbox">
 		<div class="text-head">
 			<input type="text" placeholder="My idea is ..." name="innohead" />
@@ -18,3 +17,9 @@
 
 	</div>
 </div>
+
+<?php
+else:
+header("Location: index.php");
+endif;
+?>

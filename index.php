@@ -5,11 +5,6 @@ define("NOTICEBOARD", "!@#$%^&*()");
 include("config.inc.php");
 include("includes/functions.lib.php");
 
-$page = "";
-if(isset($_GET["page"]))
-	$page = $_GET["page"];
-else
-	$page = "home";
 ?>
 <!doctype html>
 <html>
@@ -26,30 +21,25 @@ Notice Board v1.0
 </div>
 <div class="container">
 	<a href="innovate.php" ajaxify="1">
-	<div id="innovate" class="button">
+	<div id="innovate" class="bigbutton">
 		I have a new Idea
 	</div>
 	</a>
 	<a href="complaint.php" ajaxify="1">
-	<div id="complaint" class="button">
+	<div id="complaint" class="bigbutton">
 		I have a problem
 	</div>
 	</a>
 	<a href="solve.php" ajaxify="1">
-	<div id="solve" class="button">
+	<div id="solve" class="bigbutton">
 		I can find a Solution
 	</div>
 	</a>
 </div>
-<link type="text/css" rel="stylesheet" href="./templates/<?php echo TEMPLATE; ?>/home.css" />
-
-<script type="text/javascript">
-$(function(){
-	$("textarea").rte({
-		//content_css_url: "./includes/media/rte.css",
-		media_url: "./includes/media/"
-	});
-});
-</script>
+<div id="appcontrols">
+	<div class="controlbar">
+		<a href="index.php" ajaxify="1"><div class="smallbutton">Back to Home</div></a>
+	</div>
+</div>
 </body>
 </html>
